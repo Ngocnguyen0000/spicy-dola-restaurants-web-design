@@ -25,6 +25,31 @@ html{
     scroll-padding-top: 5.5rem;
 }
 
+
+section{
+    padding: 2rem 9%;
+}
+
+section:nth-child(even){
+    background: #eee;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--black);
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: .8rem 3rem;
+}
+
+.btn:hover{
+    background: var(--green);
+    letter-spacing: .1rem;
+}
+
 header{
     position: fixed;
     top:0; left:0; right:0;
@@ -53,11 +78,13 @@ header .navbar a{
     padding: .5rem 1.5rem;
     color: var(--light-color);;
 }
+
 header .navbar a.active,
 header .navbar a:hover{
     color: #fff;
     background-color: var(--green);
 }
+
 
 header .icons i,
 header .icons a{
@@ -73,28 +100,41 @@ header .icons a{
     background: #eee;
 }
 
+header .icons i:hover,
+header .icons a:hover{
+    color: #fff;
+    background-color: var(--green);
+    transform: rotate(360deg);
+}
+
+
 header .icons #menu-bars{
     display: none;
 }
 
+/* Lỗi j chỗ form ròi- mệt quá */
 
-#search-form{
+#search-form {
+    display: none; /* Ẩn form khi trang được tải lần đầu */
     position: fixed;
-    top: -110%; left:0; 
-    height: 100%; width:100%;
-    z-index: 1004; 
-    background: rgb(0, 0, 0,.8);
-    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+    z-index: 1004;
+    background: rgba(0, 0, 0, 0.8);
     align-items: center;
-    justify-self: center;
+    justify-content: center;
     padding: 0 1rem;
 }
 
-#search-form.active{
-    top:0;
+
+#search-form.active {
+    top: 0;
 }
 
-#search-form, #search-box{
+#search-form #search-box {
     width: 50rem;
     border-bottom: .1rem solid #fff;
     padding: 1rem 0;
@@ -104,34 +144,81 @@ header .icons #menu-bars{
     background: none;
 }
 
-#search-form, #search-box::placeholder{
+#search-form #search-box::placeholder {
     color: #eee;
 }
 
-#search-form, #search-box::-webkit-search-cancel-button{
+#search-form #search-box::-webkit-search-cancel-button {
     -webkit-appearance: none;
-
 }
 
-#search-form label{
+#search-form label {
     color: #fff;
     cursor: pointer;
     font-size: 3rem;
 }
 
-#search-form label:hover{
+#search-form label:hover {
     color: var(--green);
 }
 
-#search-form #close{
+#search-form #close {
     position: absolute;
     color: #fff;
     cursor: pointer;
     top: 2rem;
     right: 3rem;
     font-size: 5rem;
+}
+
+.home .home-slider .slider{
+    display: left;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-top: 9rem;
+}
+
+.home .home-slider .slider .content{
+    flex: 1 1 45rem;
 
 }
+
+.home .home-slider .slider{
+    flex: 1 1 45rem;
+}
+
+.home .home-slider .slider .image{
+    flex: 1 1 45rem;
+}
+
+.home .home-slider .slider .image img{
+    width: 100%;
+}
+
+.home .home-slider .slider .content span{
+    color: var(--green);
+    font-size: 2.5rem;
+}
+
+.home .home-slider .slider .content h3{
+    color: var(--black);
+    font-size: 7rem;
+}
+
+.home .home-slider .slider .content p{
+    color: var(--light-color);
+    font-size: 2.2rem;
+    padding: .5rem 0;
+    line-height: 1.5;
+}
+
+.swiper-pagination-bullet-active{
+    background: var(--green);
+
+}
+
+
 
 
 
@@ -185,6 +272,15 @@ header .icons #menu-bars{
         margin: 1rem;
         font-size: 2rem;
         background: #eee;
+    }
+
+    #search-form #search-box{
+        width:90%;
+        margin: 0 1rem;
+    }
+
+    .home .home-slider .slider .content h3{
+        font-size: 5rem;
     }
 }
 

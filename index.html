@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Restaurant Website Design by Mr.Web Design</title>
 
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- CSS file link -->
     <link rel="stylesheet" href="css/style.css">
@@ -26,7 +31,7 @@
         </nav>
 
             <div class="icons">
-                <i class="fas fa-bars" id="bars"></i>
+                <i class="fas fa-bars" id="menu-bars"></i>
                 <i class="fas fa-search" id="search-icon"></i>
                 <a href="#" class="fas fa-heart"></a>
                 <a href="#" class="fas fa-shopping-cart"></a>
@@ -38,54 +43,71 @@
     <!-- header section ends -->
 
 
-    <!-- search form  -->
-
+    <!-- search form: bị lỗi cái gì ròi k biết nữa mệt bỏ mẹ  -->
     <form action="" id="search-form">
         <input type="search" placeholder="search here..." name="" id="search-box">
-        <laber for="search-box" class="fas fa-search"></laber>
+        <label for="search-box" class="fas fa-search"></label>
         <i class="fas fa-times" id="close"></i>
     </form>
+    
+    
+
 
     <!-- home section -->
-    <section class="home" id="home">
-        <div class="contaniner">
-            <div class="wrapper">
-                <div class="slider">
+
+    
+   <section class="home" id="home">
+        <div class="swiper mySwiper home-slider">
+            <div class="swiper-wrapper wrapper">
+                
+                <div class="swiper-slide slider">
                     <div class="content">
                         <span>our special dish</span>
                         <h3>spicy noodles</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui pariatur culpa accusantium quibusdam ullam voluptatibus, sapiente beatae quam veniam nisi doloribus, dicta et natus vel ad facere enim. Sequi, natus!</p>
-                        <a href="#" class="btn"></a>
+                        <a href="#" class="btn">Order Now</a>
                     </div>
                     <div class="image">
                         <img src="img/home-1.jpg" alt="">
                     </div>
                 </div>
 
-                <div class="slider">
+                <div class="swiper-slide slider">
                     <div class="content">
                         <span>our special dish</span>
                         <h3>fried chicken</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui pariatur culpa accusantium quibusdam ullam voluptatibus, sapiente beatae quam veniam nisi doloribus, dicta et natus vel ad facere enim. Sequi, natus!</p>
-                        <a href="#" class="btn"></a>
+                        <a href="#" class="btn">Order Now</a>
                     </div>
                     <div class="image">
                         <img src="img/home-2.jpg" alt="">
                     </div>
                 </div>
 
-                <div class="slider">
+                <div class="swiper-slide slider">
                     <div class="content">
                         <span>our special dish</span>
                         <h3>hot pizza</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui pariatur culpa accusantium quibusdam ullam voluptatibus, sapiente beatae quam veniam nisi doloribus, dicta et natus vel ad facere enim. Sequi, natus!</p>
-                        <a href="#" class="btn"></a>
+                        <a href="#" class="btn">Order Now</a>
                     </div>
                     <div class="image">
                         <img src="img/home-3.jpg" alt="">
                     </div>
-                </div>
 
+                    <div class="swiper-slide slider">
+                        <div class="content">
+                            <span>our special dish</span>
+                            <h3>hot pizza</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui pariatur culpa accusantium quibusdam ullam voluptatibus, sapiente beatae quam veniam nisi doloribus, dicta et natus vel ad facere enim. Sequi, natus!</p>
+                            <a href="#" class="btn">Order Now</a>
+                        </div>
+                        <div class="image">
+                            <img src="img/home-4.jpg" alt="">
+                        </div>
+                </div> 
+
+                <div class="swiper-pagination"></div>
 
 
 
@@ -116,10 +138,12 @@
 
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <!-- custom js file link -->
 <script src="js/script.js"></script>
+
+
 
 </body>
 </html>
