@@ -17,20 +17,18 @@ document.querySelector('#search-icon').onclick = () => {
 
 document.querySelector('#close').onclick = () => {
     document.querySelector('#search-form').classList.remove('active');
-    menu.classList.remove('fa-times'); // Đảm bảo biểu tượng menu được chuyển trạng thái trở lại khi đóng hộp tìm kiếm
 }
 
 
 var swiper = new Swiper(".home-slider", {
-    spaceBetween: 30,
-    centeredSlides: true,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    loop:true,
-  });
+  slidesPerView: 1,
+  spaceBetween: 30,
+  keyboard: {
+    enabled: true
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true
+  },
+  loop: true
+});

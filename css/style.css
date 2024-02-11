@@ -171,42 +171,41 @@ header .icons #menu-bars{
     font-size: 5rem;
 }
 
-.home .home-slider .slider{
-    display: left;
+.home .home-slider .slide{
+    display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
     padding-top: 9rem;
 }
 
-.home .home-slider .slider .content{
-    flex: 1 1 45rem;
-
-}
-
-.home .home-slider .slider{
+.home .home-slider .slide .content{
     flex: 1 1 45rem;
 }
 
-.home .home-slider .slider .image{
+.home .home-slider .slide{
     flex: 1 1 45rem;
 }
 
-.home .home-slider .slider .image img{
+.home .home-slider .slide .image{
+    flex: 1 1 45rem;
+}
+
+.home .home-slider .slide .image img{
     width: 100%;
 }
 
-.home .home-slider .slider .content span{
+.home .home-slider .slide .content span{
     color: var(--green);
     font-size: 2.5rem;
 }
 
-.home .home-slider .slider .content h3{
+.home .home-slider .slide .content h3{
     color: var(--black);
     font-size: 7rem;
 }
 
-.home .home-slider .slider .content p{
+.home .home-slider .slide .content p{
     color: var(--light-color);
     font-size: 2.2rem;
     padding: .5rem 0;
@@ -241,6 +240,10 @@ header .icons #menu-bars{
     }
 
     header{
+        padding: 1rem 2rem;
+    }
+
+    :section{
         padding: 1rem 2rem;
     }
 }
