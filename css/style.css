@@ -243,8 +243,8 @@ header .icons #menu-bars{
         padding: 1rem 2rem;
     }
 
-    :section{
-        padding: 1rem 2rem;
+    section{
+        padding: 2rem;
     }
 }
 
@@ -282,7 +282,7 @@ header .icons #menu-bars{
         margin: 0 1rem;
     }
 
-    .home .home-slider .slider .content h3{
+    .home .home-slider .slide .content h3{
         font-size: 5rem;
     }
 }
