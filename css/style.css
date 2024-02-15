@@ -187,41 +187,44 @@ header .icons #menu-bars{
     font-size: 5rem;
 }
 
-.home .home-slider .slide{
+.home .home-slider  .slide{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
-    padding-top: 9rem;
+    padding: 9rem
 }
 
-.home .home-slider .slide .content{
+
+.home .home-slider   .slide .content{
     flex: 1 1 45rem;
-}
+} 
 
 .home .home-slider .slide{
     flex: 1 1 45rem;
 }
 
-.home .home-slider .slide .image{
+.home .home-slider  .slide .image{
     flex: 1 1 45rem;
+
 }
 
-.home .home-slider .slide .image img{
+.home .home-slider  .slide .image img{
     width: 100%;
+
 }
 
-.home .home-slider .slide .content span{
+.home .home-slider  .slide .content span{
     color: var(--green);
-    font-size: 2.5rem;
+    font-size: 2.5rem; 
 }
 
-.home .home-slider .slide .content h3{
+.home .home-slider  .slide .content h3{
     color: var(--black);
     font-size: 7rem;
 }
 
-.home .home-slider .slide .content p{
+.home .home-slider  .slide .content p{
     color: var(--light-color);
     font-size: 2.2rem;
     padding: .5rem 0;
@@ -233,11 +236,11 @@ header .icons #menu-bars{
 
 }
 
-/* .dishes .box-container {
+.dishes .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
     gap: 1.5rem; 
-} */
+}
 
 .dishes .box-container {
     display: grid;
@@ -541,6 +544,7 @@ header .icons #menu-bars{
     padding: 1.5rem;
     margin: 0 auto;
 }
+
 .order form .inputBox{
     display: flex;
     flex-wrap: wrap;
@@ -751,16 +755,16 @@ header .icons #menu-bars{
 }
 
 @media (max-width: 450px) {
-    html{
+    html {
         font-size: 50%;
     }
-
-    .dishes .box-container .box img{
+    
+    .dishes .box-container .box img {
         height: auto;
         width: 100%;
     }
 
-    .order form .inputBox .input{
+    .order form .inputBox .input {
         width: 100%;
     }
 }

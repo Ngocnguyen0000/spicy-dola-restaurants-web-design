@@ -41,18 +41,12 @@ document.querySelector('#close').onclick = () => {
 
 
 var swiper = new Swiper(".home-slider", {
-  spaceBetween: 30,
-  centeredSlides: true,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true
-  },
-  loop: true
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    loop:true,
 });
+
 
 
 
@@ -92,3 +86,20 @@ function fadeOut() {
 }
 
 window.onload = fadeOut;
+
+// function loader() {
+//     let loaderContainer = document.querySelector('.loader-container');
+//     let loaderImage = document.querySelector('.loader-container img');
+
+//     // Show loader image for a few seconds
+//     loaderContainer.style.display = 'flex';
+//     loaderImage.style.opacity = '1';
+
+//     // Hide loader after a delay
+//     setTimeout(function() {
+//         loaderContainer.classList.add('fade-out');
+//         loaderImage.style.opacity = '0';
+//     }, 2000); // Adjust delay time as needed
+
+//     clearInterval(intervalId); // Clear the interval after the fade-out animation
+// }
