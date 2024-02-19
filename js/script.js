@@ -42,10 +42,14 @@ document.querySelector('#close').onclick = () => {
 
 var swiper = new Swiper(".home-slider", {
     pagination: {
-      el: ".swiper-pagination",
+        el: ".swiper-pagination",
     },
-    loop:true,
+    loop: false, // Tắt chế độ loop
+    // Hoặc thay đổi giá trị của slidesPerView và slidesPerGroup
+    slidesPerView: 1, // Số slide hiển thị mỗi lần cuộn
+    slidesPerGroup: 1, // Số slide được cuộn mỗi lần
 });
+
 
 
 
